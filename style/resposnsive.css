@@ -1,0 +1,70 @@
+@media screen and (max-width: 1170px) {
+  main .info .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .info .contact h4 {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 845px) {
+  main .step .fortext h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 965px) {
+  main .About .divide {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main .About .divide .forcertifacets img {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 595px) {
+  main .step .fortext h1 {
+    font-size: 30px;
+  }
+  main .About h1 {
+    width: 100%;
+  }
+  main .info .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main .info .contact h4 {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .About {
+    padding: 0px 50px;
+  }
+}
+@media screen and (max-width: 445px) {
+  main .info .contact {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 335px) {
+  main .info .contact {
+    padding: 0px 10px;
+  }
+  main .info .contact h4 {
+    font-size: 13px;
+  }
+  main .info .contact h4 a {
+    width: 100px;
+    height: 20px;
+  }
+  main .info .contact h4 a i {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .About .divide .fortex .description {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=resposnsive.css.map */

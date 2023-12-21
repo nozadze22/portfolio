@@ -1,0 +1,282 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  background-color: rgb(14, 70, 82) !important;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.navbar .container-fluid .collapse ul li {
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+.navbar .container-fluid .collapse ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.navbar .container-fluid .collapse ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(14, 70, 82);
+}
+main .step {
+  width: 100%;
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgb(14, 70, 82);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Montserrat", sans-serif;
+}
+main .step .fortext {
+  width: 100%;
+  height: 100%;
+}
+main .step .fortext h5 {
+  padding-top: 100px;
+  color: yellow;
+  font-size: 17px;
+  text-align: center;
+}
+main .step .fortext h1 {
+  font-size: 80px;
+  color: rgb(243, 243, 243);
+  font-weight: bold;
+  text-align: center;
+}
+main .step .fortext h4 {
+  color: rgb(154, 154, 154);
+  font-size: 17px;
+  padding-left: 20px;
+  text-align: center;
+}
+main .step .image {
+  width: 100%;
+}
+main .step .image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  padding-bottom: 20px;
+  background-attachment: fixed;
+  border-radius: 8%;
+}
+main .About {
+  width: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 100px;
+  padding: 0px 100px;
+  box-sizing: border-box;
+  margin: auto;
+  padding-bottom: 100px;
+}
+main .About h1 {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  padding-top: 100px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 50px;
+  text-align: center;
+}
+main .About h1:hover {
+  color: black;
+}
+main .divide {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(65, 43, 43);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 12px 12px 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+main .divide .fortex {
+  width: 100%;
+  height: 100%;
+}
+main .divide .fortex .description {
+  color: rgb(249, 249, 249);
+  font-size: 16px;
+  row-gap: 2rem;
+  line-height: 2rem;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+main .divide .forcertifacets {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+main .divide .forcertifacets img {
+  width: 100%;
+  padding: 3px 0px;
+  object-fit: cover;
+}
+main .projects {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+main .projects h1 {
+  width: 100%;
+  max-width: 250px;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  font-family: "Anonymous Pro", monospace;
+  padding-bottom: 70px;
+  text-align: center;
+}
+main .projects .carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 12px 22px 25px;
+}
+main .projects .carousel .carousel-inner .carousel-item a {
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+}
+main .info {
+  width: 100%;
+  padding-top: 70px;
+}
+main .info h1 {
+  width: 100%;
+  max-width: 250px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+main .info .arrow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main .info .arrow a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+}
+main .info .arrow a i {
+  font-size: 30px;
+  color: rgb(248, 248, 248);
+  margin: auto;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+main .info .contact {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 50px;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+main .info .contact h4 {
+  color: white;
+  display: flex;
+  margin: auto;
+}
+main .info .contact h4 a {
+  color: white;
+  background-color: blue;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8%;
+}
+main .info .contact h4 a i {
+  color: white;
+  font-size: 23px;
+}
+main .info .contact h4 a i:hover {
+  transition: 2s ease;
+  font-size: 15px;
+}
+main .info .contact .insta a {
+  background-color: #D14B1C;
+}
+main .info .last {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+main .info .last .github {
+  width: 100%;
+  height: 100%;
+}
+main .info .last .github a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(0, 255, 72);
+}
+main .info .last .github a:hover {
+  color: grey;
+  transition: 1s ease;
+}
+main .info .last .github a i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: -300px;
+}
+
+.media {
+  width: 50px;
+  height: 150px;
+  background-color: rgb(139, 60, 60);
+  position: fixed;
+  right: 0;
+  bottom: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.media a {
+  text-decoration: none;
+  background-color: rgb(141, 141, 27);
+  color: white;
+}
+.media a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  font-size: 16px;
+}
+.media a i:hover {
+  color: rgb(0, 0, 0);
+  transition: 1s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */
