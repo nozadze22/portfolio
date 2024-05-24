@@ -1,0 +1,807 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: "Protest Riot", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .navbar {
+  background-color: rgb(196, 192, 192) !important;
+  width: 550px;
+  border-radius: 8px;
+  margin-top: 40px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 10100;
+  transform: translateY(-170%);
+  transition: 1.5s;
+}
+header .navbar .collapse .navbar-nav {
+  margin: auto;
+}
+header .navbar .collapse .navbar-nav .nav-item {
+  cursor: pointer;
+}
+header .navbar .collapse .navbar-nav .nav-item .iccon {
+  color: black;
+  gap: 10px;
+  position: relative;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+header .navbar .collapse .navbar-nav .nav-item .iccon i {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+header .navbar .collapse .navbar-nav .nav-item .iccon i:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: blue;
+  transition: 1s ease;
+  border-radius: 8px;
+}
+header .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  font-family: "Protest Riot", sans-serif;
+}
+header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  transition: 1s linear;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+header .navbar.active {
+  transform: translateY(0) !important;
+}
+
+.mode {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  padding: 80px;
+  z-index: 1000;
+}
+.mode .sun {
+  display: flex;
+  fill: rgb(255, 140, 0);
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+.mode .moon {
+  display: flex;
+  fill: rgb(0, 0, 0);
+  margin-left: auto;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 130px;
+  transition: 2s ease;
+  transform: translateX(-150%);
+  font-family: "Protest Riot", sans-serif;
+}
+main .getknow {
+  width: 100%;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 70px;
+}
+main .getknow .names {
+  width: 100%;
+  height: 100%;
+}
+main .getknow .names h2 {
+  letter-spacing: 0.5rem;
+}
+main .getknow .names .effects .name .hidden {
+  opacity: 0;
+}
+main .getknow .names .effects .name .console-container {
+  font-family: "Briem Hand", cursive;
+  font-size: 4em;
+  text-align: center;
+  height: 200px;
+  width: 600px;
+  display: block;
+  position: absolute;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+main .getknow .names .effects .name .console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+main .getknow .names h4 {
+  padding-top: 5px;
+}
+main .names.active {
+  transform: translateX(0) !important;
+}
+main .line {
+  width: 80%;
+  height: 2px;
+  background-color: rgb(255, 0, 0);
+  margin: auto;
+  margin-top: 30px;
+}
+main .about {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .about .context {
+  width: 100%;
+  height: 100%;
+}
+main .about .context h4 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 60px;
+  font-size: 25px;
+}
+main .about .context h3 {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  padding-top: 60px;
+  text-align: center;
+}
+main .about .context img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+main .about .skills {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  /*.col { width:101%; }*/
+  /*programacion*/
+  /*plataformas*/
+  /*programas*/
+  /*programacion*/
+  /*plataformas*/
+  /*programas*/
+  /*media queries*/
+}
+main .about .skills h2 {
+  font-size: 2.7em;
+  font-weight: normal;
+  padding: 10px 0 16px 0;
+  margin: 0 0 30px;
+  text-align: center;
+  color: #2187e7;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
+  background: #000;
+  border-radius: 2px;
+  border: 1px solid #2187e7;
+  box-shadow: 0px 0px 50px -8px #2187e7;
+}
+main .about .skills h2.plataformas {
+  border: 1px solid #9ACD32;
+  box-shadow: 0px 0px 50px -8px #9ACD32;
+  color: #9ACD32;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #9ACD32, 0 0 20px #9ACD32;
+}
+main .about .skills h2.programas {
+  border: 1px solid #FF4500;
+  box-shadow: 0px 0px 50px -8px #FF4500;
+  color: #FF4500;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
+}
+main .about .skills .container {
+  width: 100%;
+  padding: 5%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+}
+main .about .skills .col {
+  width: 23%;
+  margin: 0 5%;
+  position: relative;
+  float: left;
+  font-size: 12px;
+  line-height: 2em;
+  padding: 5% 0;
+}
+main .about .skills .skill {
+  list-style: none;
+  padding-top: 30px;
+}
+main .about .skills .skill li {
+  margin-bottom: 70px;
+  background: #030303;
+  height: 6px;
+  border-radius: 3px;
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+main .about .skills .skill li em {
+  position: relative;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+  top: -28px;
+}
+main .about .skills .blueline {
+  height: 3px;
+  margin: 2px 0;
+  background: #2187e7;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.6);
+}
+main .about .skills .greenline {
+  height: 3px;
+  margin: 2px 0;
+  background: #9ACD32;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(173, 255, 47, 0.4);
+}
+main .about .skills .redline {
+  height: 3px;
+  margin: 2px 0;
+  background: #FF4500;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(255, 69, 0, 0.4);
+}
+main .about .skills .titulo {
+  opacity: 1;
+  animation: titulo 5s ease-out;
+}
+main .about .skills .html {
+  width: 75%;
+  animation: html 2s ease-out;
+}
+main .about .skills .css {
+  width: 70%;
+  animation: css 2s ease-out;
+}
+main .about .skills .typescript {
+  width: 25%;
+  animation: php 2s ease-out;
+}
+main .about .skills .javascript {
+  width: 45%;
+  animation: javascript 2s ease-out;
+}
+main .about .skills .sass {
+  width: 75%;
+  animation: jquery 2s ease-out;
+}
+main .about .skills .bootstrap {
+  width: 60%;
+  animation: wordpress 2s ease-out;
+}
+main .about .skills .angular {
+  width: 20%;
+  animation: prestashop 2s ease-out;
+}
+main .about .skills .react {
+  width: 20%;
+  animation: joomla 2s ease-out;
+}
+main .about .skills .github {
+  width: 55%;
+  animation: blogger 2s ease-out;
+}
+main .about .skills .tridion {
+  width: 60%;
+  animation: tridion 2s ease-out;
+}
+main .about .skills .tailwind {
+  width: 30%;
+  animation: dreamweaver 2s ease-out;
+}
+main .about .skills .illustrator {
+  width: 30%;
+  animation: illustrator 2s ease-out;
+}
+main .about .skills .photoshop {
+  width: 70%;
+  animation: photoshop 2s ease-out;
+}
+main .about .skills .premiere {
+  width: 50%;
+  animation: premiere 2s ease-out;
+}
+main .about .skills .flash {
+  width: 60%;
+  animation: flash 2s ease-out;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes html {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes php {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes jquery {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes wordpress {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes prestashop {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes joomla {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes blogger {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes tridion {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes dreamweaver {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes illustrator {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes premiere {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes flash {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  main .about .skills h2 {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 980px) {
+  main .about .skills h2 {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 767px) {
+  main .about .skills h2 {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 580px) {
+  main .about .skills h2 {
+    font-size: 1.1em;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  main .about .skills h2 {
+    font-size: 2.2em;
+    padding: 10px 0 15px 0;
+  }
+  main .about .skills .col {
+    width: 90%;
+  }
+}
+main .linee {
+  width: 80%;
+  height: 2px;
+  background-color: red;
+  margin: auto;
+  margin-top: 50px;
+}
+main .projects {
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+}
+main .projects .wraper {
+  width: 1100px;
+  max-width: 100%;
+  margin: 10px 0px 10px 0px;
+  position: relative;
+  margin: auto;
+  gap: 20px;
+  padding-top: 30px;
+}
+main .projects .wraper h2 {
+  text-align: center;
+}
+main .projects .wraper .dragging .cards {
+  cursor: grab;
+  user-select: none;
+}
+main .projects .wraper #arrowOne {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(0, 77, 244);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  position: absolute;
+  z-index: 10000 !important;
+  left: -22px;
+}
+main .projects .wraper #arrowTwo {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(33, 14, 237);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  right: 13px;
+  position: absolute;
+  top: 50%;
+  z-index: 100 !important;
+}
+main .projects .wraper .carousell {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 12px);
+  gap: 16px;
+  padding: 0px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+main .projects .wraper .carousell .cards {
+  width: 100%;
+  height: 342px;
+  list-style: none;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: auto;
+  flex-shrink: 0;
+  position: relative;
+}
+main .projects .wraper .carousell .cards .see {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding-top: 20px;
+}
+main .projects .wraper .carousell .cards .see:hover {
+  color: red;
+  transition: 2s;
+}
+main .projects .wraper .carousell .cards .slide.active {
+  display: flex;
+}
+main .projects .wraper .carousell .cards .img {
+  width: 100%;
+  height: 100%;
+}
+main .projects .wraper .carousell .cards .img img {
+  width: 350px;
+  height: 300px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 8px 8px 9px 8px rgb(123, 122, 122);
+}
+main .projects .wraper .carousell .cards #heart {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  font-size: 23px;
+  cursor: pointer;
+}
+main .projects .wraper .carousell .cards h3 {
+  width: 100%;
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+main .projects .wraper .carousell .cards h5 {
+  color: aqua;
+  padding-top: 10px;
+  position: relative;
+  bottom: -7%;
+  padding-left: 7px;
+}
+main .projects .wraper .carousell .cards #start {
+  width: 100%;
+  font-size: 20px;
+  gap: 10px;
+  position: relative;
+  bottom: -10%;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 7px;
+}
+main .projects .wraper .carousell .cards #start h6 {
+  display: inline;
+  font-size: 12px;
+  text-align: center;
+}
+main .projects .wraper .carousell .cards p {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10px 0px 0px;
+  position: relative;
+  bottom: -4%;
+  text-align: center;
+}
+main .contact {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+main .contact .con {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /* Tacks */
+}
+main .contact .con h1 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contact .con .paper {
+  position: relative;
+  padding: 10px;
+  width: 12rem;
+  min-height: 120px;
+  background: linear-gradient(135deg, var(--paper-color), 85%, var(--gray-light));
+  box-shadow: 1px 0 1px var(--gray);
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+}
+main .contact .con .paper::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+main .contact .con .paper::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+main .contact .con .numbers {
+  display: flex;
+  min-height: 11rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .contact .con .number {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to right, var(--paper-color), 80%, var(--gray-light));
+  border-top: 1px dashed var(--gray);
+  box-shadow: 1px 1px 1px var(--gray);
+  transform-origin: center top;
+}
+main .contact .con .link-wrapper {
+  position: absolute;
+  display: flex;
+  top: 0;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  font-size: 0.9rem;
+  margin-left: 1.7rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+main .contact .con .link-wrapper i {
+  margin-right: 5px;
+  font-size: 2.1rem;
+}
+main .contact .con .link-wrapper a {
+  text-decoration-style: dashed;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: red;
+  font-family: "Briem Hand", cursive;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+main .contact .con .number:nth-child(2) {
+  transform: skew(-5deg, 0deg);
+  background: var(--paper-color);
+}
+main .contact .con .number:nth-child(2)::after,
+main .contact .con .number:nth-child(4)::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--gray-light), 5%, rgba(211, 211, 211, 0));
+}
+main .contact .con .number:nth-child(1),
+main .contact .con .number:nth-child(3) {
+  background: linear-gradient(to right, var(--paper-color), 60%, var(--gray-light));
+}
+main .contact .con .number:nth-child(4) {
+  transform: skew(-8deg, 0deg);
+  background: var(--paper-color);
+}
+main .contact .con .number:nth-child(5) {
+  transform: skew(-3deg, 0deg);
+}
+
+.main.active {
+  transform: translateY(0) !important;
+}
+
+.info {
+  width: 70px;
+  height: 200px;
+  position: fixed;
+  top: 40%;
+  right: 0px;
+  background-color: rgb(255, 191, 0);
+  border-radius: 5px;
+}
+.info .links {
+  width: 100%;
+  height: 100%;
+}
+.info .links a {
+  text-decoration: none;
+}
+.info .links a i {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
