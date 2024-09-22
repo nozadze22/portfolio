@@ -303,7 +303,7 @@ main .about .skills .typescript {
   animation: php 2s ease-out;
 }
 main .about .skills .javascript {
-  width: 45%;
+  width: 60%;
   animation: javascript 2s ease-out;
 }
 main .about .skills .sass {
@@ -311,7 +311,7 @@ main .about .skills .sass {
   animation: jquery 2s ease-out;
 }
 main .about .skills .bootstrap {
-  width: 60%;
+  width: 75%;
   animation: wordpress 2s ease-out;
 }
 main .about .skills .angular {
